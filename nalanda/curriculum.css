@@ -1,0 +1,269 @@
+*
+{
+    box-sizing: border-box;
+
+}
+.custom-shape-divider-top-1678363156 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+
+}
+.custom-shape-divider-top-1678363156 svg 
+{
+    position: relative;
+    display: block;
+    width: calc(104% +0.5px);
+    height: 167px;
+}
+.custom-shape-divider-top-1678363156 .shape-fill
+{
+    fill: #FFFFFF;
+}
+body,html
+{
+    background-color: #F6C354;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+
+}
+.bbs
+{
+    position: relative;
+    top: 60%;
+}
+.bbsheading
+{
+  
+   text-align: center;
+   position: relative;
+   top: 10%;
+   font-size: 20px;
+}
+.bbsflex
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 50px;
+    position: relative;
+    left: 17%;
+    
+}
+.bbscard1,.bbscard2,.bbscard3
+{
+    width: 300px;
+    background-color: #ffffff;
+    font-size: 25px;
+    border-radius: 5%;
+    height: 470px;
+}
+.card1heading,.card2heading,.card3heading
+{
+    text-align: center;
+}
+.card1info,.card2info,.card3info
+{
+    margin-left: 10px;
+}
+.card1img,.card2img,.card3img
+{
+    position: relative;
+    left: 33%;
+    padding-top: 20px;
+}
+.card2img
+{
+    padding-top: 26px;
+    padding-bottom: 0;
+}
+.card3img
+{
+    padding-top: 25px;
+}
+.card1info ul,.card2info ul,.card3info ul{
+    line-height: 34px;
+}
+.custom-shape-divider-bottom-1678369091 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1678369091 svg {
+    position: relative;
+    display: block;
+    width: calc(153% + 1.3px);
+    height: 155px;
+}
+
+.custom-shape-divider-bottom-1678369091 .shape-fill {
+    fill: #ffffff;
+}
+.info_levels_flex
+{
+    margin-top: 30px;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    align-items: center;
+    text-align: center;
+    left: 9.5%;
+    gap: 50px;
+ background-color: #FFFFFF;
+}
+.info_levels
+{
+    background-color: #FFFFFF;
+    margin-top:100px ;
+}
+.info{
+    background-image: url('mandalaback.webp');
+}
+.custom-shape-divider-top-1678369961 {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1678369961 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 119px;
+}
+
+.custom-shape-divider-top-1678369961 .shape-fill {
+    fill: #FFFFFF;
+}
+.info_levels_para1
+{
+    font-size: 25px;
+}
+.custom-shape-divider-top-1678370542 {
+    position: absolute;
+    top: 1020px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1678370542 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 119px;
+}
+
+.custom-shape-divider-top-1678370542 .shape-fill {
+    fill: #FFFFFF;
+}
+.curriulum
+{
+    position: relative;
+    
+    background-image: url(background.jpg);
+    background: position 10px;;
+}
+.curriculumsection1flex
+{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+    left: 12%;
+    top: 30px;
+}
+.curriculum_heading
+{
+    font-size: 30px;
+}
+.curriculum_summury
+{
+    font-size: 25px;
+}
+.curriculum_branch1,.curriculum_branch2,.curriculum_branch3
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 22px;
+    position: relative;
+    top: 60px;
+    left: 12%;
+    width: 350px;
+    background-color: #FFFFFF;
+    height: 360px;
+    text-align: center;
+    border-radius: 10%;
+}
+.curriculum_branch
+{
+    display: flex;
+    flex-direction: row;
+    gap: 50px; 
+}
+.branch_heading1
+{
+    line-height: 12px;
+}
+.branch_heading2
+{
+    line-height: 2px;
+}
+.branch_heading3
+{
+    line-height: 2px;
+}
+.curriculum_branch1
+{
+    padding-top: 20px;
+}
+.space
+{
+    height: 100px;
+
+}
+.curriculum_branch_img2
+{
+    margin-top: 20px;
+}
+.curriculum_branch_img3
+{
+    margin-top: 20px;
+}
+.hiwflex
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 1200px;
+    align-items: center;
+    position: relative;
+    left: 12%;
+}
+.hiwheading{
+    font-size: 25px;
+}
+.hiwpara1,.hiwpara2
+{
+    font-size: 20px;
+}

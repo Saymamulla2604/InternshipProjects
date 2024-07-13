@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Slab&display=swap');
+h1
+{
+    color: rgb(46, 192, 78);
+    font-family: poppins;
+    margin-left: 155px;
+    margin-top: 80px;
+    font-size: 20px;
+}
+p
+{
+    color: rgb(63, 63, 63);
+    font-size: 40px;
+    margin-left: 155px;
+    font-weight: bolder;
+   
+}
+.container
+{
+    display: flex;
+   background-color: rgb(255, 255, 255);
+   
+    position: relative;
+    
+    top: 10%;
+    align-content: center;
+    align-items: center;
+}
+.container1
+{
+    display: flex;
+   
+    flex-direction: column;
+    position: relative;
+    width: 200px;
+    gap: 10px;
+    left: 36%;
+   
+}
+.container2
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: relative;
+    left: 5%;
+    gap: 10px;
+    
+}
+.container3
+{
+    position: relative;
+    left: 24%;
+}
+.box1
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    height: 120px;
+    text-align: center;
+    color: rgb(22, 206, 22);
+    font-weight: bolder;
+    font-size: 28px;
+    font-family: poppins;
+    align-items: center;
+    justify-content: center;
+}
+.box2
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    height: 120px;
+    text-align: center;
+    color: rgb(61, 61, 212);
+    font-weight: bolder;
+    font-size: 28px;
+    font-family: poppins;
+}
+.box3
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    height: 120px;
+    text-align: center;
+    color: rgb(199, 199, 4);
+    font-weight: bolder;
+    font-size: 28px;
+    font-family: poppins;
+
+}
+.box4
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    height: 120px;
+    text-align: center;
+    color: rgb(231, 70, 70);
+    font-weight: bolder;
+    font-size: 28px;
+    font-family: poppins;
+}
+

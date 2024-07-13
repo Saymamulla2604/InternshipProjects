@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paramount Academy | Home</title>
+    <link rel="stylesheet" href="rpahome.css" />
+    <script
+    src="https://kit.fontawesome.com/47c0aaf49b.js"
+    crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button> 
+    <div class="formOpen" onclick="popForm()">Fill Your Details <i class="fa-solid fa-heart-circle-plus"> </i></div>
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">Chat with us!
+          <i id="chat-icon" style="color: #fff;" class="fa-solid fa-comments"></i>
+      </button>
+
+      <div class="content">
+          <div class="full-chat-block">
+              <!-- Message Container -->
+              <div class="outer-container">
+                  <div class="chat-container">
+                      <!-- Messages -->
+                      <div id="chatbox">
+                          <h5 id="chat-timestamp"></h5>
+                          <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                      </div>
+
+                      <!-- User input box -->
+                      <div class="chat-bar-input-block">
+                          <div id="userInput">
+                              <input id="textInput" class="input-box" type="text" name="msg"
+                                  placeholder="Tap 'Enter' to send a message">
+                              <p></p>
+                          </div>
+
+                          <div class="chat-bar-icons">
+                              <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                  onclick="sendButton()"></i>
+                          </div>
+                      </div>
+
+                      <div id="chat-bar-bottom">
+                          <p></p>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+  <div class="container">
+      
+      <div class="form2" id="form">
+        <h2>Book Your Free Class Now</h2>
+         <h5>Learn from the best!</h5>
+         <br>
+         <h4>Enter your details</h4>
+         <input type="text" placeholder="Enter Student Name">
+            <input type="text" placeholder="Enter Your Mobile No.">
+            <input type="text" placeholder="Current Class">
+         <a href="#" class="sub">Submit Now</a>
+         <a href="#" id="close" class="cls">Close</a>
+     </div>
+      <section class="head">
+        <div class="nav">
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header">
+            <div class="nav-title">
+              <img src="https://firebasestorage.googleapis.com/v0/b/bubble-byte.appspot.com/o/homepage%2Flogo.png?alt=media&token=53c325bb-e128-4fa2-8312-678d2f7783cd" alt="" />
+            </div>
+            <div class="name">
+              Kasegoan Education Society
+              <h3>Rajarambapu Paramount Academy</h3>
+            </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+
+          <div class="nav-links">
+            <a href="#">Admission</a>
+            <a href="#" onclick="gotoCourses()">Courses</a>
+            <a href="#" onclick="gotoFacilities()">Facilities</a>
+            <a href="#">Results</a>
+            <a onclick="gotoBottom()" href="#">Contact</a>
+            <a href="./About.html">About Us</a>
+          </div>
+        </div>
+        <div class="marq">
+          <marquee scrollamount="12">Place your Result details here...... NEW NEW NEW .......Place your Result details here</marquee>
+        </div>
+        <div class="data">
+        <div class="textBox">
+          <h3>Want to prepare for Engineering and Defence at the same time?</h3>
+          <h1>Then RPA is the Best Choice!</h1>
+          <a href="#" class="enroll" id="enroll" >Enroll Now</a>
+           </div>
+           <div class="formbg">
+        <div class="form">
+           <h2>Book Your Free Class Now</h2>
+            <h5>Learn from the best!</h5>
+            <br>
+            <h4>Enter your details</h4>
+            <input type="text" placeholder="Enter Student Name">
+            <input type="text" placeholder="Enter Your Mobile No.">
+            <input type="text" placeholder="Current Class">
+            <a href="">Submit Now</a>
+        </div>
+      </div>
+      <div class="ytvideo" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L44AmVzVagg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onclick="popForm()"></iframe>
+      </div>
+      </div>
+      </section>
+      <section class="info">
+        <h1 class="title">What We Offer?</h1>
+
+        <div class="cards reveal">
+          <div class="card">
+            <div class="title">JEE</div>
+            <span class="line line2"></span>
+            <div class="details">
+              Aspiring students in India, passing the JEE (Joint Entrance Exam)
+              is the ticket to getting admission in some of the prestigious and
+              best engineering colleges in the country, particularly the NITs,
+              IITs, IISC, and state-funded technical institutes.
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">NEET</div>
+            <span class="line line3"></span>
+            <div class="details">
+              Do you want to change your dream into reality? Do you want to be a
+              doctor? Then you should prepare yourself for NEET. You can
+              research the courses after qualifying for the NEET exam. NEET is
+              the All India Entrance Test for students who want to be doctors in
+              the future.
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">NDA</div>
+            <span class="line line4"></span>
+            <div class="details">
+              Serving the nation is one of the biggest reasons to join the NDA,
+              and so is a good career option. Candidates who join the Indian
+              Army provide their country with selfless service and give them a
+              sense of pride
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">MH-CET</div>
+            <span class="line line1"></span>
+            <div class="details">
+              The Common Entrance Test (CET) is a competitive exam conducted for
+              the purpose of admission of students to the first year or first
+              semester of full-time courses in medical, dental and engineering
+              courses in professional colleges the various states of India.
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          Why Choose Us?
+          <div class="infos ">
+            <div class="infographic reveal">
+              <div class="info-title">Integrated Course with Boards</div>
+              <div class="info-details">
+                <div class="info-info">
+                  We provide not only courses like Mains & Advanced JEE, NEET and NDA but also we offer the training of CET, 11th Board, 12th Board and also Foundation of 8,9,10th .We provide student training for SSB classes. We develop skills like personality development program, English communication.
+                </div>
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="infographic2 reveal">
+              <div class="info-title">Transport Facility</div>
+              <div class="info-details">
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+                <div class="info-info">
+                  The academy has arranged its own college buses for safe commuting of students from their places to college. It fully ensures to save student’s precious time. The bus facility is available for students of Islampur City and nearby areas.
+                </div>
+              </div>
+            </div>
+            <div class="infographic reveal">
+              <div class="info-title">Hostel and Mess Facility</div>
+              <div class="info-details">
+                <div class="info-info">
+                  Our hostel has following facilities:- Dedicated Girls and Boys Hostel Facility, Campus under CCTV surveillance, 24x7 electricity and water supply, Solar panels for hot water, Caretakers and housekeeping services 24x7, RO water used for cooking, mess is well maintained and care is taken to ensure hygiene.
+                </div>
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="infographic2 reveal">
+              <div class="info-title">Study Material</div>
+              <div class="info-details">
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+                <div class="info-info">
+                  We provide study material for our students for the courses like JEE, NEET, AIIMS and NDA. The material consists of Concept Booster, Chapter at a glance, Miscellaneous Questions, Spark Questions, Entrance exam zone, Solved and unsolved questions, Question papers of previous exams.
+                </div>
+              </div>
+            </div>
+            <div class="infographic reveal">
+              <div class="info-title">Smart Classroom</div>
+              <div class="info-details">
+                <div class="info-info">
+                  The classrooms are equipped with LCD projector. The smart board saves teachers time while drawing graphs and logical diagrams. The smart projector allows the teachers to take their teaching out of class and connect it to wider world of internet allowing them to use video files, PPT and other online resources as per their choice. The campus also has Conference and Seminar halls with audio visual aids and multimedia facilities.
+                </div>
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="infographic2 reveal">
+              <div class="info-title">Night Study Facility</div>
+              <div class="info-details">
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+                <div class="info-info">
+                  RPA stands out different among others because of its “Night Supervised Study”. Teachers are available during night study for clearing the doubts.
+                </div>
+              </div>
+            </div>
+            <div class="infographic reveal">
+              <div class="info-title">Computer Labs</div>
+              <div class="info-details">
+                <div class="info-info">
+                  The computer lab with Wi-Fi and the Internet connectivity is an integral part of our system. Students gain latest knowledge and IT skills using the computer labs.
+                </div>
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="infographic2 reveal">
+              <div class="info-title">Self-Assessment Programme</div>
+              <div class="info-details">
+                <div class="info-img">
+                  <img
+                    src="https://img.freepik.com/free-photo/modern-splash-frame-with-yellow-background_1361-3599.jpg?w=740&t=st=1662803353~exp=1662803953~hmac=898a05c11c34f02bfbefd629e4b5b00213203a09b4a81ba88e6fde4b941415d1"
+                    alt=""
+                  />
+                </div>
+                <div class="info-info">
+                  SAP is self-assessment programme. Students are assigned questions to solve as per the NEET/JEE Pattern on daily basis in a scheduled class. One subjects SAP activity is conducted every day. Discussion class is conducted after the student submit their SAP assignment. It gives them opportunity to rectify their mistakes immediately.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="info2">
+
+          <h1 class="title">Demos</h1>
+  
+          <div class="cards reveal">
+            <div class="card">
+              <div class="demoimg">
+                <img src="https://img.freepik.com/free-vector/notebook-concept-illustration_114360-387.jpg?w=740&t=st=1664126088~exp=1664126688~hmac=9f54625eaeab3e0480b1521736ab2a764a506bb75dcddaea23421695be3eee52" alt="">
+              </div>
+              <div class="title">Demo Study Material</div>
+              <a href="https://drive.google.com/file/d/18p_qAQyepA3RbUdp0BIGz6QXgf8qBBrf/view?usp=sharing" class="getbtn" target="_blank">
+                Get Here
+              </a>
+            </div>
+            <div class="card">
+              <div class="demoimg">
+                <img src="https://img.freepik.com/free-vector/study-abroad-concept-illustration_114360-7493.jpg?w=740&t=st=1664125967~exp=1664126567~hmac=6a6ced2c2dd85bd40ef967f18e29a7d4a826df8460ed6a90245084062cde05f4" alt="">
+              </div>
+              <div class="title">Student Routine</div>
+              <a href="https://drive.google.com/file/d/18p_qAQyepA3RbUdp0BIGz6QXgf8qBBrf/view?usp=sharing" class="getbtn" target="_blank">
+                Get Here
+              </a>
+            </div>
+            <div class="card">
+              <div class="demoimg">
+                <img src="https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?w=740&t=st=1664126440~exp=1664127040~hmac=8f8947bfb06cbdb6415c53ded9b627e5e2d246b4a6ea901ba8d0f33e0617997b" alt="">
+              </div>
+              <div class="title">Demo Something</div>
+              <a href="https://drive.google.com/file/d/18p_qAQyepA3RbUdp0BIGz6QXgf8qBBrf/view?usp=sharing" class="getbtn" target="_blank">
+                Get Here
+              </a>
+            </div>
+          </div>
+        <h1 class="title">Reviews From Our Students</h1>
+        <div class="outerdiv">
+          <div class="innerdiv">
+            <!-- div1 -->
+            <div id="slides__1" class="div1 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
+                </div>
+                <div class="detbox">
+                  <p class="name">Daniel Clifford</p>
+                  <p class="designation">Verified Graduate</p>
+                </div>
+              </div>
+              <div class="review">
+                <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4>
+              <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. ”</p>
+              </div>
+              <a class="slide__prev" href="#slides__5" title="Next"></a>
+        <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <!-- div2 -->
+            <div id="slides__2" class="div2 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
+                </div>
+                <div class="detbox">
+                  <p class="name">Jonathan Walters</p>
+                  <p class="designation">Verified Graduate</p>
+                </div>
+              </div>
+              <div class="review">
+                <h4>The team was very supportive and kept me motivated</h4>
+              <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+              </div>
+              <a class="slide__prev" href="#slides__1" title="Next"></a>
+        <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <!-- div3 -->
+            <div id="slides__3" class="div3 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
+                </div>
+                <div class="detbox">
+                  <p class="name dark">Kira Whittle</p>
+                  <p class="designation dark">Verified Graduate</p>
+                </div>
+              </div>
+              <div class="review dark">
+                <h4>Such a life-changing experience. Highly recommended!</h4>
+                <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. ”</p>
+              </div>
+              <a class="slide__prev" href="#slides__2" title="Next"></a>
+        <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <!-- div4 -->
+            <div id="slides__4" class="div4 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
+                </div>
+                <div class="detbox">
+                  <p class="name dark">Jeanette Harmon</p>
+                  <p class="designation dark">Verified Graduate</p>
+                </div>
+              </div>
+              <div class="review dark">
+                <h4>An overall wonderful and rewarding experience</h4>
+              <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+              </div>
+              <a class="slide__prev" href="#slides__3" title="Next"></a>
+        <a class="slide__next" href="#slides__5" title="Next"></a>
+            </div>
+            <!-- div5 -->
+            <div id="slides__5" class="div5 eachdiv">
+              <div class="userdetails">
+                <div class="imgbox">
+                  <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
+                </div>
+                <div class="detbox">
+                  <p class="name">Patrick Abrams</p>
+                  <p class="designation">Verified Graduate</p>
+                </div>
+              </div>
+              <div class="review">
+                <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h4>
+              <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest.  ”</p>
+              </div>
+              <a class="slide__prev" href="#slides__4" title="Next"></a>
+        <a class="slide__next" href="#slides__1" title="Next"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Rajarambapu Paramount Academy</h1>
+
+          <address>
+            Near RIT, Rajaramnagar, Islampur(Sangli) - 415414<br />
+
+            <a class="footer__btn"href="mailto:rpa.rajaramnagar@gmail.com" target="_blank">Email Us</a>
+          </address>
+        </div>
+
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Contact</h2>
+
+            <ul class="nav__ul">
+              <li>
+                <a href="#">GIRISH SHETE</a>
+              </li>
+
+              <li>
+                <a href="#">(+91) 8888480801 </a>
+              </li>
+
+              <li>
+                <a href="#">(+91) 9766163468</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Work with Us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Social</h2>
+            <ul class="social-logos">
+              <li class="logo"><a href="https://www.instagram.com/rajarambapuparamountacademy/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="logo"><a href="https://www.facebook.com/rajarambapuparamountacademy" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+              <li class="logo"><a href="mailto:rpa.rajaramnagar@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+          </li>
+
+          <li class="map">
+           <a href="https://www.google.com/maps/place/Rajarambapu+Institute+of+Technology/@17.0629276,74.2859183,16.22z/data=!4m5!3m4!1s0x0:0x35d1cbf0672b3f50!8m2!3d17.063564!4d74.283243" target="_blank"><img src="img/Screenshot (32).png" alt=""></a>
+          </li>
+        </ul>
+
+        <div class="legal">
+          <p>&copy; 2022 Something. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('form').style.display = "none";
+        document.getElementById('enroll').onclick=function(){
+  document.getElementById('form').style.display='';
+};
+
+        document.getElementById('close').onclick=function(){
+  document.getElementById('form').style.display='none';
+};
+
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  window.scrollTo({ left: 0, top: 0, behavior: "smooth" });// For Chrome, Firefox, IE and Opera
+}
+
+function gotoBottom() {
+  window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+}
+
+function gotoCourses() {
+  window.scrollTo({ left: 0, top: document.querySelector('.head').scrollHeight, behavior: "smooth" });
+}
+function gotoFacilities() {
+  window.scrollTo({ left: 0, top: 1200, behavior: "smooth" });
+}
+
+function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            reveals.forEach((reveal)=>{
+                var windowHeight = window.innerHeight;
+                var elementTop = reveal.getBoundingClientRect().top;
+                var elementVisible = 100;
+
+                if (elementTop < windowHeight - elementVisible){
+                    reveal.classList.add("active");
+                }else{
+                    reveal.classList.remove("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll",reveal);
+
+        function popForm() {
+          setTimeout(() => {
+            
+          }, 2000);
+          console.log("ytvideo clicked");
+          document.querySelector('.formbg').style.display = "flex";
+        }
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>

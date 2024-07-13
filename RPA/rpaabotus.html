@@ -1,0 +1,879 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPA | About Us</title>
+    <script
+      src="https://kit.fontawesome.com/47c0aaf49b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    .head {
+      min-height: 100vh;
+      width: 100%;
+      background: lightcyan;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0px;
+      overflow-x: hidden;
+    }
+    .head .head-card {
+      /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+    .head .head-card:nth-child(1) {
+      width: 40vw;
+      min-height: 80vh;
+      transform: translateX(-40px);
+      background: url("https://img.freepik.com/free-photo/brainstorm-meeting_1098-15871.jpg?w=1060&t=st=1663408841~exp=1663409441~hmac=c292e166fde07a9ca39f6cf8c73195c5620a0ba62b9c3f316e071a0da6723495");
+      background-position: center;
+      background-size: cover;
+    }
+    .head .head-card:nth-child(3) {
+      width: 40vw;
+      min-height: 80vh;
+      transform: translateX(40px);
+      background: url("https://img.freepik.com/free-photo/study-group-african-people_23-2149156402.jpg?w=1060&t=st=1663409529~exp=1663410129~hmac=55f474c7bcbe56d8e7ab2ddb541ae6b0a58bbb0592bc76e7f84eb3791fd6d909");
+      background-size: cover;
+      background-position: center;
+    }
+    .head .head-card:nth-child(2) {
+      width: 20vw;
+      height: 50vh;
+      background: url("img/bblogo.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .nav {
+      text-align: center;
+      padding-top: 20px;
+      width: 100%;
+      background-color: #0071bc;
+      color: white;
+      padding-right: 12vw;
+      padding-left: 12vw;
+      display: flex;
+      justify-content: space-between;
+      height: 75px;
+      position: fixed;
+      z-index: 1000;
+    }
+
+    .nav > .nav-header {
+      display: flex;
+    }
+
+    .nav img {
+      top: -15%;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      position: relative;
+    }
+
+    .nav > .nav-btn {
+      display: none;
+    }
+
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .nav > .nav-links > a {
+      display: inline-block;
+      padding: 13px 15px 13px 15px;
+      text-decoration: none;
+      color: white;
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+
+    .nav > .nav-links > a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav > #nav-check {
+      display: none;
+    }
+
+    .history {
+      margin: 60px;
+      padding: 20px;
+      background: white;
+      color: black;
+      max-height: max-content;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+    }
+    /* .facility{
+  text-align: center;
+}
+.facility h3,.history h3{
+    color: blue;
+    font-size: 2.5em;
+} */
+    .history h3 {
+      color: blue;
+      font-size: 2.5em;
+    }
+    .underline {
+      height: 5px;
+      background-color: lightgreen;
+      border-radius: 10px;
+    }
+    .history p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      padding: 0px 40px;
+    }
+    /* .facility p{
+  font-size: 1.2em;
+  padding-left: 150px;
+  padding-right: 150px;
+} */
+    .history p {
+      margin-top: 40px;
+    }
+    h4 {
+      color: rgb(86, 86, 231);
+      font-size: 1.4em;
+      margin-top: 20px;
+    }
+    .facility {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .facility .title {
+      color: blue;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-top: 30px;
+    }
+    .facility .fac {
+      max-width: 70vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: 50px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.2s;
+    }
+    .facility .fac:hover {
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .facility .fac .contentbox {
+      width: 50%;
+      text-align: left;
+      padding: 10px;
+    }
+    .facility .fac .contentbox .content-title {
+      font-size: 1.5em;
+      margin: 20px 10px;
+      font-weight: 500;
+      color: #0071bc;
+    }
+    .facility .fac .imgbox {
+      width: 50%;
+    }
+    .facility .fac .contentbox .content {
+      margin-left: 10px;
+      font-size: 1.1em;
+    }
+    .facility .fac .imgbox img {
+      width: 35vw;
+      height: 100%;
+    }
+    .footer {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 30px 30px 20px 30px;
+      color: #2f2f2f;
+      background-color: #eee;
+      border-top: 1px solid #e5e5e5;
+      margin-top: 30px;
+    }
+
+    .footer > * {
+      flex: 1 100%;
+    }
+
+    .footer__addr {
+      margin-right: 1.25em;
+      margin-bottom: 2em;
+    }
+
+    .footer__logo {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+
+    .footer__addr h2 {
+      margin-top: 1.3em;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .nav__title {
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    .footer address {
+      font-style: normal;
+      color: #999;
+      margin-top: 20px;
+    }
+
+    .footer__btn {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      max-width: max-content;
+      background-color: rgb(33, 33, 33, 0.07);
+      border-radius: 100px;
+      color: #2f2f2f;
+      line-height: 0;
+      margin: 0.6em 0;
+      font-size: 1rem;
+      padding: 0 1.3em;
+    }
+    .footer__btn:hover {
+      background: rgb(33, 33, 33, 0.2);
+    }
+
+    .footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer li {
+      line-height: 2em;
+    }
+
+    .footer a {
+      text-decoration: none;
+    }
+
+    .footer__nav {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .footer__nav > * {
+      flex: 1 50%;
+      margin-right: 1.25em;
+    }
+
+    .nav__ul a {
+      color: #999;
+    }
+
+    .nav__ul--extra {
+      column-count: 2;
+      column-gap: 1.25em;
+    }
+
+    .legal {
+      display: flex;
+      flex-wrap: wrap;
+      color: #999;
+    }
+    .social-logos {
+      text-align: left;
+      margin-left: 15px;
+    }
+    .logo {
+      font-size: 1.3em;
+      cursor: pointer;
+      opacity: 0.9;
+      transition: all 0.1s;
+      display: block;
+      max-width: 50px;
+    }
+    .social-logos .logo:nth-child(1) a {
+      color: #ef4438;
+    }
+    .social-logos .logo:nth-child(2) a {
+      color: blue;
+    }
+    .social-logos .logo:nth-child(3) a {
+      color: black;
+    }
+    .logo a {
+      text-decoration: none;
+    }
+    .logo:hover {
+      transform: translateY(-5px);
+      opacity: 1;
+    }
+    .gal {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 20px;
+      grid-gap: 20px;
+      margin-top: 50px;
+    }
+    .gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.2s;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    .gallery:hover a img {
+      transform: scale(1.3);
+    }
+    .gallery:hover .desc {
+      opacity: 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s;
+    }
+
+    .desc {
+      padding: 10px;
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    @media screen and (min-width: 24.375em) {
+      .legal .legal__links {
+        margin-left: auto;
+      }
+    }
+
+    @media screen and (min-width: 40.375em) {
+      .footer__nav > * {
+        flex: 1;
+      }
+
+      .nav__item--extra {
+        flex-grow: 2;
+      }
+      .footer__addr {
+        flex: 1 0px;
+      }
+
+      .footer__nav {
+        flex: 2 0px;
+      }
+    }
+    @media (max-width: 600px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      .nav {
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      .nav img {
+        display: block;
+        width: 70px;
+        height: 70px;
+        position: relative;
+      }
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label:hover,
+      .nav #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        text-align: center;
+        position: absolute;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        z-index: 10001;
+      }
+      .nav > .nav-links > a {
+        margin: 20px;
+        display: block;
+        width: 100%;
+        color: black;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+      .gal {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    ul {
+      list-style-type: none;
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <img src="img/bblogo.png" alt="" />
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="./index.html">Admission</a>
+        <a href="./index.html">Courses</a>
+        <a href="./index.html">Facilities</a>
+        <a href="#">Results</a>
+        <a href="#" onclick="gotoBottom()">Contact</a>
+        <a href="#">About Us</a>
+      </div>
+    </div>
+    <section class="head">
+      <div class="head-card"></div>
+      <div class="head-card"></div>
+      <div class="head-card"></div>
+    </section>
+    <section class="about">
+      <div class="history">
+        <h3>History</h3>
+        <span class="underline"></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          quaerat corrupti suscipit in consectetur est molestiae, rerum officiis
+          ex optio ut repellat explicabo voluptatem perferendis cum omnis quam.
+          Aspernatur sequi minus obcaecati praesentium doloremque provident aut
+          aliquid. Excepturi ab, saepe aut omnis sunt, a officia quia blanditiis
+          eius ea velit impedit deleniti non veritatis iusto? Deserunt, ea sint.
+          Maxime voluptatum incidunt quo sequi ullam maiores libero pariatur
+          commodi cum cumque nihil quas praesentium, quisquam accusantium
+          sapiente fugit! Tempora non vel repellat reiciendis, dolores ea!
+          Itaque, quas recusandae. Sed officia excepturi qui aliquid. Iste, rem
+          qui sunt ullam tempore harum nesciunt. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nihil, mollitia quos dignissimos officia
+          enim cum? Veniam, nihil. Magni sunt deserunt, dolorum a tenetur enim
+          cum at doloremque excepturi nulla voluptates, et temporibus harum,
+          vitae ab id ipsam quasi error officiis aut quod neque delectus! Labore
+          sed nam assumenda esse voluptate. Facilis est temporibus beatae
+          repellendus similique, natus facere a voluptas, laborum aliquam nihil
+          illum dignissimos mollitia, optio officia ab explicabo tempora nostrum
+          delectus quidem eveniet harum cumque maiores! Nostrum similique
+          officiis sequi quo modi voluptatem eligendi nam necessitatibus laborum
+          blanditiis corporis autem non ab, possimus cumque architecto natus
+          numquam eius?
+        </p>
+      </div>
+      <div class="facility">
+        <div class="title">Facilities</div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Integrated Course with Board</div>
+            <div class="content">
+              11 JEE -> 8,9,10 Foundation + MH-CET + Mains + Adv. + board
+              preparation from 11th class
+              <br />
+              12 JEE -> 11th all syllabus + 12th board + MH-CET + JEE Mains +
+              Adv. + with college admission <br />
+              11 NEET-> 8,9,10 Foundation + MH-CET+ NEET + board preparation
+              from 11th class <br />
+
+              12 NEET -> 11th all syllabus + 12th board + MH-CET + NEET + with
+              college admission <br />
+
+              NEET Repeater -> 11th + 12th + MH-CET + NEET <br />
+
+              SPECIAL NDA/NA 11+12 -> Daily SSB Classes + English Communication
+              Classes + Daily Physical <br />
+
+              Exercise + Personality Development Program
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Transport Facility</div>
+            <div class="content">
+              The academy has arranged its own college buses for safe commuting
+              of students from their places to college. It fully ensures to save
+              student’s precious time. The bus facility is available for
+              students of Islampur City and nearby areas.
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Hostel and Mess Facility</div>
+            <div class="content">
+              The Rajarambapu Paramount Career Academy provides a comfortable
+              accommodation for its students. It’s a second home which ensures
+              that the students live their college life in a healthy and safe
+              environment
+              <br />
+              <ul>
+                <li>Dedicated Girls and Boys Hostel Facility</li>
+                <li>
+                  CCTV cameras at entrances of all hostels and foyer inside the
+                  campus
+                </li>
+                <li>24x7 electricity and water supply in all the hostels</li>
+                <li>Solar panels installed in all hostels for hot water</li>
+                <li>
+                  Caretakers and housekeeping services are provided in all
+                  hostels during day and night
+                </li>
+                <li>
+                  RO water used for cooking, mess is well maintained and care is
+                  taken to ensure hygiene.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Study Material</div>
+            <div class="content">
+              In collaboration with experienced faculties, The Research and
+              Development wing of our institute undertakes the task of
+              preparation of course modules for JEE, NEET, AIIMS and NDA. The
+              study modules comprise of - a) Concept Booster, B) Chapter at a
+              glance, C) Miscellaneous Questions, D) Spark Questions, E)
+              Entrance exam zone, F) Solved and unsolved questions, G) Question
+              papers of Previous Exams.. Study material covers short notes,
+              figures, diagrams, formulae, equation, HOT questions, etc.
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Smart Classroom</div>
+            <div class="content">
+              The spacious classrooms on campus are equipped with LCD projectors
+              to implement an interactive learning experience for the students.
+              The design of the classrooms facilitates a free exchange of ideas
+              between students and teachers. The smart board saves teachers time
+              while drawing graphs and logical diagrams. The smart projector
+              allows the teachers to take their teaching out of class and
+              connect it to wider world of internet allowing them to use video
+              files, PPT and other online resources as per their choice. The
+              campus also has Conference and Seminar halls with audio visual
+              aids and multimedia facilities.
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Night Study Facility</div>
+            <div class="content">
+              RPA stands out different among others because of its “Night
+              Supervised Study”. Teachers are available during night study for
+              clearing the doubts.
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Computer Labs</div>
+            <div class="content">
+              The computer lab with Wi-Fi and the Internet connectivity is an
+              integral part of our system. Students gain latest knowledge and IT
+              skills using the computer labs.
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="fac">
+          <div class="contentbox">
+            <div class="content-title">Self-Assessment Programme</div>
+            <div class="content">
+              SAP is self-assessment programme. Students are assigned questions
+              to solve as per the NEET/JEE Pattern on daily basis in a scheduled
+              class. One subjects SAP activity is conducted every day.
+              Discussion class is conducted after the student submit their SAP
+              assignment. It gives them opportunity to rectify their mistakes
+              immediately.
+            </div>
+          </div>
+          <div class="imgbox">
+            <img
+              src="https://img.freepik.com/free-photo/portrait-pensive-young-girl-making-notes_171337-1646.jpg?w=1060&t=st=1663776105~exp=1663776705~hmac=288a4c5f26fcbc69d58f845d495ba6cae66b59f51ae9cc9e3f851c0787028865"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gal">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img
+            src="https://img.freepik.com/free-photo/happy-beautiful-girl-standing-with-note-books-backpack-showing-thumb-up-smiling_8353-6390.jpg?w=1060&t=st=1663687075~exp=1663687675~hmac=3573241db23b20d3d0f6ec30e85bd51437877ed9140e38fd19bcae78cda21f37"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img
+            src="https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?w=996&t=st=1663687092~exp=1663687692~hmac=22578cee221145acd5499d83e70edfc1b361b8a646369bac969a3f13798c2ea5"
+            alt="Forest"
+            width="600"
+            height="400"
+          />
+        </a>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img
+            src="https://img.freepik.com/premium-photo/asian-indian-college-student-focus-working-laptop-reading-book-while-other-classmates-background-outdoor-picture-university-campus_466689-7773.jpg?w=1060"
+            alt="Northern Lights"
+            width="600"
+            height="400"
+          />
+        </a>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img
+            src="https://img.freepik.com/free-photo/closeup-shot-two-domed-towers-old-royal-naval-college-greenwich-london_181624-44376.jpg?w=1380&t=st=1663687123~exp=1663687723~hmac=f3225ec5e73be6ad3f96f92a606cdc7aa1cff686e8867bb496295e091047f143"
+            alt="Mountains"
+            width="600"
+            height="400"
+          />
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img
+            src="https://img.freepik.com/free-photo/traffic-vehicle-urban-reflections-city_1112-973.jpg?w=1060&t=st=1663688144~exp=1663688744~hmac=964c88cc8d7cbe16f4985cc114c2767ad81e92bf4df74fc2f8a4d90ab87a644d"
+            alt="Mountains"
+            width="600"
+            height="400"
+          />
+        </a>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img
+            src="https://img.freepik.com/free-photo/multinational-graduates-male-female-celebrating-graduation-university-campus-removing-their-graduation-hats-smiling-camera_496169-1297.jpg?w=1060&t=st=1663688101~exp=1663688701~hmac=0c80aa54b270a0e37d43a20e05cc0e758cf5c4cc1286b61eb4ad801787dac08d"
+            alt="Mountains"
+            width="600"
+            height="400"
+          />
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Rajarambapu Paramount Academy</h1>
+
+        <address>
+          RIT, Rajaramnagar, Islampur(Sangli) - 415414<br />
+
+          <a
+            class="footer__btn"
+            href="mailto:rpa.rajaramnagar@gmail.com"
+            target="_blank"
+            >Email Us</a
+          >
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Contact</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">GIRISH SHETE</a>
+            </li>
+
+            <li>
+              <a href="#">(+91) 8888480801 </a>
+            </li>
+
+            <li>
+              <a href="#">(+91) 9766163468</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Social</h2>
+          <ul class="social-logos">
+            <li class="logo">
+              <a
+                href="https://www.instagram.com/rajarambapuparamountacademy/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="logo">
+              <a
+                href="https://www.facebook.com/rajarambapuparamountacademy"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li class="logo">
+              <a href="mailto:rpa.rajaramnagar@gmail.com" target="_blank"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2022 Something. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+    <script>
+      function gotoBottom() {
+  window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+}
+function topFunction() {
+  window.scrollTo({ left: 0, top: 0, behavior: "smooth" });// For Chrome, Firefox, IE and Opera
+}
+    </script>
+  </body>
+</html>

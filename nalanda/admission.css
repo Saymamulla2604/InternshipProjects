@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.a_banner_heading
+{
+    font-family: 'Charm', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(253, 135, 0);
+}
+
+
+
+
